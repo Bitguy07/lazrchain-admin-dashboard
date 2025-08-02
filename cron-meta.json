@@ -1,0 +1,22 @@
+{
+  "jobs": [
+    {
+      "name": "Daily Yield Distribution",
+      "path": "/api/cron/daily-yield",
+      "schedule": "1 0 * * *",
+      "description": "Runs daily at 12:01 AM to calculate and distribute user deposit yields."
+    },
+    {
+      "name": "Referral Yield Update",
+      "path": "/api/cron/daily-referralyield",
+      "schedule": "5 0 * * *",
+      "description": "Runs daily at 12:05 AM to calculate earnings from referrals."
+    },
+    {
+      "name": "Auto Claim Execution",
+      "path": "/api/cron/auto-claim",
+      "schedule": "55 23 * * *",
+      "description": "Runs daily at 11:55 PM to auto-claim any pending rewards."
+    }
+  ]
+}
